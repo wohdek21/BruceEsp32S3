@@ -5,7 +5,6 @@
 #include "modules/gps/wigle.h"
 #include "modules/ir/TV-B-Gone.h"
 #include "modules/ir/custom_ir.h"
-#include "modules/others/audio.h"
 #include "modules/others/qrcode_menu.h"
 #include "modules/rf/rf_send.h"
 #include "mykeyboard.h" // using keyboard when calling rename
