@@ -193,11 +193,11 @@
 //#define TFT_RST  33  // Reset pin (could connect to Arduino RESET pin)
 //#define TFT_BL   32  // LED back-light (required for M5Stack)
 
-#define TFT_MOSI 15
-#define TFT_SCLK 13
+#define TFT_MOSI 11
+#define TFT_SCLK 12
 #define TFT_CS   5   // Chip select line for TFT display on Shield
-#define TFT_DC   23  // Data/command line for TFT on Shield
-#define TFT_RST  18  // Reset line for TFT is handled by seesaw!
+#define TFT_DC   16  // Data/command line for TFT on Shield
+#define TFT_RST  17  // Reset line for TFT is handled by seesaw!
 #define TOUCH_CS -1 
 
 // ######       EDIT THE PINs BELOW TO SUIT YOUR ESP32 PARALLEL TFT SETUP ######
