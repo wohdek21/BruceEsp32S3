@@ -113,7 +113,6 @@ void Timer::loop() {
         if (check(EscPress)) { break; }
 
         if (elapsedMillis >= duration) {
-            _tone(2000, 1000);
             break;
         }
     }
