@@ -1,7 +1,5 @@
 #include "rf_listen.h"
 
-#include "../others/audio.h"
-
 volatile unsigned long lastMicros = 0;
 volatile unsigned long pulseMicros = 0;
 volatile float ___frequency = 0;
@@ -78,11 +76,6 @@ void rf_listen() {
             pulseActive = true;
             String pulseText = String("Freq: ") + String(___frequency, 2) + String(" Hz");
             displayRedStripe(pulseText, getComplementaryColor2(bruceConfig.priColor), bruceConfig.priColor);
-#if defined(BUZZ_PIN)
-            tone(BUZZ_PIN, ___frequency, pulseDuration);
-#elif defined(HAS_NS4168_SPKR)
-            playTone(___frequency, pulseDuration, 0);
-#endif
         }
 
         if (pulseActive && millis() - lastPulseTime > 3000) {
