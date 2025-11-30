@@ -115,8 +115,8 @@ jobs:
 
           cat ./platformio.ini
 
-      - name: Clean old libs & builds
-          run: rm -rf ~/.platformio/lib
+      - name: Clean global libs (safe for all PIO versions)
+        run: rm -rf ~/.platformio/lib
 
       - name: Run Compile
         run: |
