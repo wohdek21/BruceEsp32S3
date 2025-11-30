@@ -116,9 +116,7 @@ jobs:
           cat ./platformio.ini
 
       - name: Clean old libs & builds
-        run: |
-          pio lib purge
-          pio run -e esp32-s3-devkitc-1 -t clean
+          run: rm -rf ~/.platformio/lib
 
       - name: Run Compile
         run: |
