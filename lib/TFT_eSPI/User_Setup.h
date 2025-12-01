@@ -195,7 +195,7 @@
 
 #define TFT_MOSI 11
 #define TFT_SCLK 12
-#define TFT_CS   5   // Chip select line for TFT display on Shield
+#define TFT_CS   15   // Chip select line for TFT display on Shield
 #define TFT_DC   16  // Data/command line for TFT on Shield
 #define TFT_RST  17  // Reset line for TFT is handled by seesaw!
 #define TOUCH_CS -1 
