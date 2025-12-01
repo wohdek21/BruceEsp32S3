@@ -133,6 +133,12 @@ jobs:
         run: |
           # pio run -e ${{ matrix.board.env }} -t build-firmware
           # Files are merged after build
+          
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: .pio/build/**
 
       - name: Upload ${{ matrix.board.env }}
         uses: actions/upload-artifact@v4
